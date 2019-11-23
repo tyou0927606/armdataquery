@@ -141,14 +141,13 @@ def print_csv(column_names, data):
 query -f csv -e hive -c 'my_col1,my_col2,my_col5' -m 1427347140 -M 1427350725 -l 100
 my_db my_table
 where:
-● -f / --format is optional and specifies the output format: tabular by default
-● -c / --column is optional and specifies the comma separated list of columns to restrict the
+  -f / --format is optional and specifies the output format: tabular by default
+  -c / --column is optional and specifies the comma separated list of columns to restrict the
 result to. Read all columns if not specified.
-● -l / --limit is optional and specifies the limit of records returned. Read all records if not
-specified.
-● -m / --min is optional and specifies the minimum timestamp: NULL by default
-● -M / --max is optional and specifies the maximum timestamp: NULL by default
-● -e / --engine is optional and specifies the query engine: ‘presto’ by default
+  -l / --limit is optional and specifies the limit of records returned. Read all records if not specified.
+  -m / --min is optional and specifies the minimum timestamp: NULL by default
+  -M / --max is optional and specifies the maximum timestamp: NULL by default
+  -e / --engine is optional and specifies the query engine: ‘presto’ by default
 """
 
 @click.command()
