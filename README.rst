@@ -23,6 +23,8 @@ export TD_API_KEY=<api_key>
 to install the local package "armdata" along with the required packages to 
 the python virtualenv specified in "tox.ini".
 
+"envlist = py37" should be changed to the python virtualenv of interest.
+
 (base) Tims-MacBook-Pro-2:arm_treasure_data Tim$ tox
 GLOB sdist-make: /Users/Tim/Documents/arm_treasure_data/setup.py
 py37 create: /Users/Tim/Documents/arm_treasure_data/.tox/py37
