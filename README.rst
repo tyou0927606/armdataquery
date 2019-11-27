@@ -69,7 +69,15 @@ ____________________________________ summary ___________________________________
 ------------------------
 How to run the query command:
 
-(base) Tims-MacBook-Pro-2:arm_treasure_data Tim$ query --help
+Switch to the specified virtual env "py37" or other virtual env by running "activate".
+
+(base) Tims-MacBook-Pro-2:arm_treasure_data Tim$ source .tox/py37/bin/activate
+(py37) (base) Tims-MacBook-Pro-2:arm_treasure_data Tim$ which query
+
+/Users/Tim/Documents/arm_treasure_data/.tox/py37/bin/query
+
+(py37) (base) Tims-MacBook-Pro-2:arm_treasure_data Tim$ query --help
+
 Usage: query [OPTIONS] DB_NAME TABLE_NAME
 
 Options:
